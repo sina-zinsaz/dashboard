@@ -1,10 +1,8 @@
 import { drawerWidth } from "@/app/constants/global-data";
 import { menu } from "@/app/constants/menu";
-import { Box, Drawer, Toolbar, Typography } from "@mui/material";
+import { Box, Drawer, Typography } from "@mui/material";
 
-export default function Sidebar() {
-  console.log(menu);
-  
+export default function Sidebar() {  
   return (
     <Drawer
       variant="permanent"
@@ -17,10 +15,12 @@ export default function Sidebar() {
         },
       }}
     >
-      <Toolbar />
+      <Box display='flex' justifyContent='center' my={1.5}>
+        <Typography variant="h4" fontWeight='bold'>Sina Zinsaz</Typography>
+      </Box>
       <Box sx={{ overflow: "auto" }}>
         {menu.map((item , index) => (
-        <Typography key={index} >{item}</Typography>
+        <Typography key={index} fontWeight='bold' fontSize='1.2rem' ml={2} mb={1} sx={{cursor:'pointer'}}>{item}</Typography>
       ))}
       </Box>
     </Drawer>
