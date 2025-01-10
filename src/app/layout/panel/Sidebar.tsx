@@ -3,6 +3,8 @@ import { menu } from "@/app/constants/menu";
 import { Box, Drawer, Toolbar, Typography } from "@mui/material";
 
 export default function Sidebar() {
+  console.log(menu);
+  
   return (
     <Drawer
       variant="permanent"
@@ -17,7 +19,7 @@ export default function Sidebar() {
     >
       <Toolbar />
       <Box sx={{ overflow: "auto" }}>
-        {menu.map((index , item) => (
+        {menu.map((item , index) => (
         <Typography key={index} >{item}</Typography>
       ))}
       </Box>

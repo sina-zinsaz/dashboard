@@ -1,1 +1,1 @@
-export const menu:string[] = ['Dashboard' , 'Profile'];
+export const menu:string[] = ['Dashboard' ,'Todo List' ,'Profile'];
