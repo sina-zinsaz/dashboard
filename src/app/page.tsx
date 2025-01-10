@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import PanelLayout from "./layout/panel";
+import PanelLayout from "./layout/panel/PanelLayout";
 
 export default function Home() {
   return (
