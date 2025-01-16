@@ -1,5 +1,6 @@
 import { drawerWidth } from "@/app/constants/global-data";
 import { Toolbar, Typography, AppBar } from "@mui/material";
+import ThemeToggleButton from '../../components/ThemeToggleButton';
 
 export default function Header() {
   return (
@@ -11,6 +12,8 @@ export default function Header() {
         <Typography variant="h6" noWrap>
           Dashboard
         </Typography>
+        <ThemeToggleButton />
+
       </Toolbar>
     </AppBar>
   );

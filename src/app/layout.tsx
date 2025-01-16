@@ -1,8 +1,7 @@
 'use client';
 
 import "./globals.css";
-import { CssBaseline, ThemeProvider } from "@mui/material";
-import theme from "./styles/theme";
+import { ThemeContextProvider } from './context/ThemeContext';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -11,10 +10,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>Dashboard</title>
       </head>
       <body>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
+        <ThemeContextProvider>
           {children}
-        </ThemeProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );
