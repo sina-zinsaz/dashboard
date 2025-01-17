@@ -25,13 +25,20 @@ export default function Sidebar() {
           <Link
             key={index}
             href={item.link}
-            sx={{ textDecoration: "none", color: "inherit" }}
+            sx={{
+              textDecoration: "none",
+              color: "inherit",
+              display: "flex",
+              alignItems: "center",
+              mb: 2,
+              ml: 2,
+            }}
           >
+            <item.icon />
             <Typography
               fontWeight="bold"
               fontSize="1.2rem"
-              ml={2}
-              mb={1}
+              ml={1}
               sx={{ cursor: "pointer", textDecoration: "none" }}
             >
               {item.title}

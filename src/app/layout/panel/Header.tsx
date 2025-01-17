@@ -6,7 +6,11 @@ export default function Header() {
   return (
     <AppBar
       position="fixed"
-      sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}
+      sx={{
+        width: `calc(100% - ${drawerWidth}px)`,
+        ml: `${drawerWidth}px`,
+        backgroundColor: "#0B1437",
+      }}
     >
       <Toolbar>
         <Box display="flex" justifyContent="space-between" width="100%">
