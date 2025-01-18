@@ -3,7 +3,6 @@ import { Container, Stack } from "@mui/material";
 
 import Header from "./Header";
 import Sidebar from "./Sidebar";
-import { Outlet } from "@mui/icons-material";
 
 export default function PanelLayout() {
   return (
@@ -19,7 +18,7 @@ export default function PanelLayout() {
             <Header />
 
             <Container maxWidth="xl" sx={{ height: "100%" }}>
-              <Suspense fallback={<></>}>
+              <Suspense>
                 <Outlet />
               </Suspense>
             </Container>
